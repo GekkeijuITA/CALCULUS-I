@@ -1,0 +1,38 @@
+\newcommand\preamble{
+    \usepackage[italian]{babel}
+    \usepackage{geometry}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{graphicx}
+    \usepackage{ulem}
+    \usepackage[table, dvipsnames]{xcolor}
+    \usepackage{spverbatim}
+    \usepackage{hyperref}
+    \usepackage{pgfplots}
+
+    \pgfplotsset{compat=1.17}
+
+    \geometry{margin=2cm}
+    \let\olditemize\itemize
+    \renewcommand\itemize{\olditemize\setlength\itemsep{0em}}
+    \graphicspath{{Immagini/}}
+
+    \author{Lorenzo Vaccarecci}
+
+    \hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        filecolor=magenta,      
+        urlcolor=blue,
+        pdfpagemode=FullScreen,
+    }
+
+    \urlstyle{same}
+}
+\newcommand {\key}[1]{\underline{#1}}
+\newcommand {\question}[1]{\textit{#1}\\}
+\newcommand {\important}[1]{\textcolor{red}{#1}}
+\newcommand {\remark}[1]{\textcolor{Cyan}{#1}}
+\newcommand {\dom}[1]{\text{dom}(#1)}
+\newcommand {\img}[1]{\text{img}(#1)}
+\newcommand{\inv}[1]{#1^{-1}}
