@@ -29,7 +29,7 @@
         \item Dato $x \in \mathbb{R}$, esiste un \textit{unico} elemento $m \in \mathbb{Z}$ tale che $m \leq x < m+1$. Tale $m$ è detto \textbf{parte intera} di $x$ e si indica con $m=[x]$
     \end{enumerate}
     \section{Grafici}
-    L'asse orizzontale è detto \textbf{asse delle ascisse} e quello verticaale \textbf{asse delle ordinate}.
+    L'asse orizzontale è detto \textbf{asse delle ascisse} e quello verticale \textbf{asse delle ordinate}.
     \begin{itemize}
         \item $(-a,b)$ è simmetrico a $(a,b)$ rispetto all'asse delle ordinate
         \item $(a,-b)$ è simmetrico a $(a,b)$ rispetto all'asse delle ascisse
@@ -77,6 +77,11 @@
     Una funzione $f: A \rightarrow B$ è detta \textbf{iniettiva} se $\forall x_{1},x_{2} \quad x_{1}\neq x_{2}$ di $A$ risulta che $f(x_{1})\neq f(x_{2})$, ossia se punti distinti hanno immagini distinte. (E' iniettiva se la funzione è continua e solo se è strettamente monotona)\\
     La funzione $f$ è detta \textbf{surgettiva} se $\forall y \in B \quad \exists x \in A | y=f(x)$; ossia ogni elemento del codominio è immagine di qualche punto del dominio.\\
     La funzione $f$ è detta \textbf{bigettiva} se è sia iniettiva che surgettiva.
+    \begin{itemize}
+        \item \textbf{Iniettiva}: ogni retta orizzontale interseca il grafico in al più un punto
+        \item \textbf{Suriettiva}: ogni retta orizzontale interseca il grafico in almeno un punto
+        \item \textbf{Bigettiva}: ogni retta orizzontale interseca il grafico in uno e un solo un punto
+    \end{itemize}
     \section{Funzioni limitate}
     Una funzione $f$ si dice \textbf{limitata superiormente} se l'immagine è limitata superiormente cioè $\exists M \in \mathbb{R} | \forall x \in A \quad f(x)\leq M$\\
     Una funzione $f$ si dice \textbf{limitata inferiormente} se l'immagine è limitata inferiormente cioè $\exists m \in \mathbb{R} | \forall x \in A \quad f(x)\geq m$\\
@@ -427,7 +432,7 @@
     \begin{equation*}
         F(x)+c \quad c\in \mathbb{R}
     \end{equation*}
-    è una primitiva di $f$ in $I$. Viceversa se $F$ e $G$ sono due primitive di $f$ sull'intervallo $I$ allora esiste una costance $c$ tale che $G(x)-F(x)=c$.\\
+    è una primitiva di $f$ in $I$. Viceversa se $F$ e $G$ sono due primitive di $f$ sull'intervallo $I$ allora esiste una costante $c$ tale che $G(x)-F(x)=c$.\\
     L'insieme di tutte le primitive di $f$ in un intervallo $I$ si chiama \textbf{integrale indefinito} di $f$ sull'intervallo $I$ e si indica con il simbolo:
     \begin{equation*}
         \int f(x)dx
